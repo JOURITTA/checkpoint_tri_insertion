@@ -1,0 +1,60 @@
+PROCEDURE saisie(var n:INTEGER)
+BEGIN
+REPEAT
+    write("donner la taille du tableau");
+    read (n);
+UNTIL (n>2);
+END
+
+PROCEDURE remplir(var tab:array of INTEGER, n:INTEGER)
+VAR
+ i:INTEGER;
+BEGIN
+FOR i FROM 0 TO n-1 STEP 1  DO
+    write("remplir le tableau");
+    read(tab[i]);
+END_FOR
+END
+
+PROCEDURE insertion(var tab:array of INTEGER, n:INTEGER);
+VAR
+
+BEGIN
+FOR i FROM 2 TO n STEP 1 DO
+ IF (T[i-1] > T[i]) THEN
+    Tmp ← T[i]
+    PROCEDURE DECALER (tab, i-1, p)
+    T[p+1]← Tmp
+ END_IF
+END_FOR
+END
+PROCEDURE DECALER (VAR tab:array of INTEGER, deb : INTEGER, Var fin : INTEGER)
+ VAR
+ tmp:INTEGER;
+ BEGIN
+ fin ← deb;
+  While (fin >= 1) ET (tab[fin] > Tmp) DO
+    tab[fin+1] ← tab[fin];
+    fin ← fin - 1;
+END_WHILE
+END
+
+PROCEDURE afficher (tab:array of INTEGER, n:INTEGER);
+VAR
+ i:INTEGER;
+BEGIN
+FOR i FROM 0 TO n-1 STEP 1  DO
+    write("t[i]");
+END_FOR
+END
+
+ALGORITHM tri_insertion
+VAR
+    tab:array of INTEGER[50];
+    n:INTEGER;
+BEGIN
+   PROCEDURE saisie(n);
+   PROCEDURE remplir(tab,n),
+   PROCEDURE insertion(tab,n);
+   PROCEDURE afficher (tab,n);
+END
